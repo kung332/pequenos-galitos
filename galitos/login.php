@@ -19,36 +19,42 @@
                    <div class="textfield"> 
                      <label for="usuario"> Usuário </label>
                      <input type="text" name="usuario" placeholder="Usuário">
-                     </div>
-                     <div class="textfield"> 
+                    </div>
+
+                    <div class="textfield"> 
                         <label for="senha"> Senha </label>
                         <input type="password" name="senha" placeholder="Senha"><br>
                         </div>
                      <button class="btn-login">Login</button>
-                     </div>
-                   </div>
-                
-            </body>
-
-
-            </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                    </div>
+                </div>          
+            </div>      
     </div> 
+
+    <div class="rigth-login">
+                <div class="card-login" > 
+                    <h1>LOGIN</h1>
+                   <div class="textfield"> 
+
+                   <form action="" method="post">
+                     <label for="usuario"> Usuário </label>
+                     <input type="text" name="usuario" placeholder="Usuário">
+                    </div>
+
+                    <div class="textfield"> 
+                        <label for="senha"> Senha </label>
+                        <input type="password" name="senha" placeholder="Senha"><br>
+                        </div>
+                     <input type= "submit" class="btn-login">Login</button>
+                    </form>
+                    </div>
+                </div>          
+            </div>     
+
+    
+
+
+
+    
 </body>
 </html>
