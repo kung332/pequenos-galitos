@@ -50,7 +50,7 @@ $conn->close();
 ?>
 <p></p>
 
-    <a href="cadastro.php">Exibir Agenda</a>
+    <a href="contato.php">Exibir Agenda</a>
     
 </body>
 </html>
