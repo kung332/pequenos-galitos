@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-<a href= "login.php"> Consultar agenda </a>
+<a href= "login.php"> Cadastre na agenda </a>
 
 </body>
 </html>
