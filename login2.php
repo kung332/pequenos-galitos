@@ -13,10 +13,12 @@
          <h1>Faça Login<br>Para entrar em nosso site</h1>
          <img src="senha.svg" class="left-login-image"alt="senha">
          </div>
-            <div class="rigth-login">
+         <div class="rigth-login">
                 <div class="card-login" > 
                     <h1>LOGIN</h1>
                    <div class="textfield"> 
+
+                   <form action="" method="post">
                      <label for="usuario"> Usuário </label>
                      <input type="text" name="usuario" placeholder="Usuário">
                     </div>
@@ -25,13 +27,15 @@
                         <label for="senha"> Senha </label>
                         <input type="password" name="senha" placeholder="Senha"><br>
                         </div>
-                     <button class="btn-login">Login</button>
+                     <input type= "submit" class="btn-login">Login</button>
+                    </form>
                     </div>
                 </div>          
-            </div>      
+            </div>     
     </div> 
 
-   
+    
+
     
 
 
