@@ -1,3 +1,37 @@
+<?php
+
+include "conexao.php";
+
+// Inicializa a sessão
+session_start();
+
+// Verifica se o formulário de login foi submetido
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtém o nome de usuário e senha do formulário
+    $username = mysqli_real_escape_string($conn, $_POST["usuario"]);
+    $password = mysqli_real_escape_string($conn, $_POST["senha"]);
+
+    // Consulta o banco de dados para verificar se o usuário e senha correspondem a um registro
+    $sql = "SELECT id FROM usuarios WHERE nome = '$username' AND senha = '$password'";
+    $result = mysqli_query($conn, $sql);
+
+    // Verifica se a consulta retornou algum resultado
+    if (mysqli_num_rows($result) == 1) {
+        // Inicia a sessão com o ID do usuário
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION["user_id"] = $row["id"];
+
+        // Redireciona para a página de cadastro
+        header("Location: contato.php");
+        exit();
+    } else {
+        // Exibe uma mensagem de erro caso o usuário e senha não correspondam a um registro
+        $login_error = "Nome de usuário ou senha inválidos.";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt.br">
 <head>
@@ -13,10 +47,12 @@
          <h1>Faça Login<br>Para entrar em nosso site</h1>
          <img src="senha.svg" class="left-login-image"alt="senha">
          </div>
-            <div class="rigth-login">
+         <div class="rigth-login">
                 <div class="card-login" > 
                     <h1>LOGIN</h1>
                    <div class="textfield"> 
+
+                   <form action="" method="post">
                      <label for="usuario"> Usuário </label>
                      <input type="text" name="usuario" placeholder="Usuário">
                     </div>
@@ -25,13 +61,15 @@
                         <label for="senha"> Senha </label>
                         <input type="password" name="senha" placeholder="Senha"><br>
                         </div>
-                     <button class="btn-login">Login</button>
+                     <input type= "submit" class="btn-login">Login</button>
+                    </form>
                     </div>
                 </div>          
-            </div>      
+            </div>     
     </div> 
 
-   
+    
+
     
 
 
