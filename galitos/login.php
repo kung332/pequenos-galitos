@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = mysqli_real_escape_string($conn, $_POST["senha"]);
 
     // Consulta o banco de dados para verificar se o usuário e senha correspondem a um registro
-    $sql = "SELECT id FROM login WHERE nome = '$username' AND senha = '$password'";
+    $sql = "SELECT id FROM usuarios WHERE nome = '$username' AND senha = '$password'";
     $result = mysqli_query($conn, $sql);
 
     // Verifica se a consulta retornou algum resultado
