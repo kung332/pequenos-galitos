@@ -1,0 +1,94 @@
+body{
+   
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+   
+
+}
+
+.geral{
+
+
+    width: 100VW;
+    height: 100vh; 
+    background: #8b99a5;
+
+
+}
+
+.banner{ 
+    
+    width: 100VW;
+    height: 20vh;
+    background: #002241;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner> h1{
+    color: #ffffff;
+    font-size: 30px;
+    text-transform:uppercase;
+    
+}
+   
+.sub-banner{
+    width: 100VW;
+    height: 25vh;
+    background: #ffffff;
+}
+
+.sub-banner> h1{
+    color: #000000;
+    font-size: 8px;
+}
+
+.comunhao{
+
+    width: 100VW;
+    height: 100vh;
+    background: #002d55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cesquerdo{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #00ffd5;
+    font-size: 20px;
+    
+}
+
+.cesquerdo> h1{
+
+    color: #000000;
+    
+    
+}
+
+.listaimg{
+    width:30vw;
+
+}
+
+.cdireito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #d4f1f8;
+    font-size: 17px;
+    color: #000000;
+}

@@ -1,0 +1,191 @@
+body{
+
+   margin: 0;
+   font-family: 'Oswald', sans-serif; 
+
+}
+
+body * {
+
+
+    box-sizing: border-box;
+}
+
+
+.geral{
+
+    width: 100vw;
+    height: 100vh;
+    background: #95d8ff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+ .left-login{
+
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+ }
+
+.p-esquerda> h1{
+
+
+    color: #0088ff;
+    font-size: 3vw;
+
+
+
+}
+
+.p-direita{
+
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.cardcadastro{
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px ;
+    background: #6322ad;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #490050;
+
+
+}
+
+.cardcadastro> h1 {
+
+
+    color: #0095cf;
+    font-weight: 800;
+    margin: 0;
+
+
+
+}
+.ursimagem{
+    width: 35vw;
+}
+
+.cardcongruentes{
+
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    
+
+}
+
+
+
+
+
+.cardcongruentes> input{
+    width: 100%;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #8ddfffc5;
+    box-shadow: 0px 10px 40px #490050;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+
+}
+
+.cardcongruentes> label{
+    color: #ffffff ;
+    font-size: 15px;
+    margin: 10px;
+
+
+}
+
+.cardcongruentes> input::placeholder {
+
+    color: #ff00b3d7;
+
+
+}
+
+.butao{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px ;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-transform: uppercase ;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: #ff00ff ;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 1opx 40px -12px #d016ff;
+    
+
+}
+
+
+@media only screen and (max-width: 950px){
+    .cardcadastro{
+       width:85%;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px){
+    .cardcadastro{
+       flex-direction: column;
+       
+    }
+    .p-esquerda > h1{
+
+        display: none;
+    }
+
+    .p-esquerda{
+        width: 100%;
+        height: auto;
+    }
+
+    .p-direita{
+    width: 100%;
+    height: auto;
+    }
+
+    .p-esquerda> .ursimagem{
+       width:50vw; 
+    }
+    .cardcadastro{
+
+        width:90%;
+    }
+
+}
+
